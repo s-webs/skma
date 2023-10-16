@@ -1,0 +1,133 @@
+.content_block {
+    display: flex;
+    flex-direction: column;
+}
+.content_margin_top {
+    margin-top: 100px;
+}
+.content_inner {
+    margin-top: 78px;
+    margin-bottom: 53px;
+}
+.content_inner_text {
+    padding: 60px 65px 0 50px;
+    font-size: 25px;
+    font-family: var(--font-300);
+}
+.content_inner_news {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content_inner_news_item {
+    width: calc(100% / 3);
+    max-height: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.content_inner_news_item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    transition: all 0.3s;
+}
+.content_inner_news_item:hover img {
+    transform: scale(1.1);
+}
+.content_inner_news_info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.content_inner_news_title {
+    text-align: center;
+    font-family: var(--font-900);
+}
+.content_inner_news_date {
+    display: flex;
+    margin-top: 26px;
+    font-family: var(--font-300);
+    font-size: 20.83px;
+}
+.content_inner_news_date p:first-child {
+    border-right: 2px solid #fff;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.content_inner_gallery_images {
+    display: flex;
+}
+.content_inner_gallery_item {
+    width: 50%;
+}
+.content_inner_gallery_item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.content_inner_honors {
+    position: relative;
+    padding-top: 69px;
+    padding-left: 35px;
+	margin-bottom: 85px;
+}
+.content_inner_honors_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 35px);
+    transform: translateX(-35px);
+}
+.content_inner_honors_item {
+    width: calc((100% - 27px) / 4);
+}
+.content_inner_honors_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #fff;
+}
+.content_inner_honors_item:not(:last-child) {
+    margin-right: 9px;
+}
+.content_inner_honors_item img {
+    max-width: 100%;
+    width: 228px;
+}
+.content_inner_honors_text {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 17.61px;
+    font-family: var(--font-700);
+}
+.content_inner_honors_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 190px);
+    height: 400px;
+    transform: translateX(-35px);
+    background-color: var(--grey-lighter-color);
+    z-index: -1;
+}
+.content_inner_history_img {
+    position: relative;
+}
+.content_inner_history_img img {
+    width: 100%;
+    height: 100%;
+	min-height: 300px;
+    object-fit: cover;
+}
